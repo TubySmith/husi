@@ -46,8 +46,10 @@ def fabonacci_list(n):
     for _ in range(n-2):
         fib_list.append(fib_list[-1] + fib_list[-2])
     return fib_list[:n]    
-
+ 
+# fabonacci darabszám megadása
 FABONACCI_NUMBER = 10
+
 # rekulzió kiírása
 for i in range(FABONACCI_NUMBER):
     print(fabonacci(i),end=' ')
@@ -55,9 +57,9 @@ print()
 
 # generátor kiírása
 fabonacci_start = fabonacci_generator(FABONACCI_NUMBER)
-for _ in range(7):
+for _ in range(FABONACCI_NUMBER):
     print(next(fabonacci_start), end=' ')
+print()
 
 # lista kiírása
 print(fabonacci_list(FABONACCI_NUMBER))
-
