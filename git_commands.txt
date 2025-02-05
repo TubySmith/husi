@@ -1,0 +1,12 @@
+git init
+git pull https://github.com/TubySmith/husi.git
+git status
+git add .
+git status
+git commit -m TKB 
+git remote add husi https://github.com/TubySmith/husi.git
+git push --set-upstream husi main
+git status
+
+
+
