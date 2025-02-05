@@ -60,3 +60,4 @@ for _ in range(7):
 
 # lista kiírása
 print(fabonacci_list(FABONACCI_NUMBER))
+
