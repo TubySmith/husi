@@ -42,9 +42,12 @@ def fabonacci_generator(n:int):
 fabonacci_start = fabonacci_generator(7)
 for _ in range(7):
     print(next(fabonacci_start), end=' ')
+print()
 
-def fabonacci_list(n-2):
+def fabonacci_list(n):
     fib_list = [0, 1]
-    for _ in range(n):
+    for _ in range(n-2):
         fib_list.append(fib_list[-1] + fib_list[-2])
-    return fib_list[:n]    
+    return fib_list[:n] 
+
+print(fabonacci_list(7))
