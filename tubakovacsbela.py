@@ -1,4 +1,6 @@
 # First Project
+# HUSI 
+
  
 # írjunk összeadó függvényt 
 # legyen két paraméter
@@ -23,16 +25,15 @@ def paros_e(x):
 # print('1', paros_e(1))
 # print('2', paros_e(2))
 
+
 # irjunk fabonacci sor függvényt
+
+# rekulzív megvalósítás
 def fabonacci (n):
-    '''fabonacci sor elemei
-    '''
     return n if n<2 else fabonacci(n-2) + fabonacci(n-1)
 
-for i in range(7):
-    print(fabonacci(i),end=' ')
-print()
 
+# fabonacci generator
 def fabonacci_generator(n:int):
     a, b = 0, 1
     for _ in range(n):
@@ -42,12 +43,9 @@ def fabonacci_generator(n:int):
 fabonacci_start = fabonacci_generator(7)
 for _ in range(7):
     print(next(fabonacci_start), end=' ')
-print()
 
-def fabonacci_list(n):
+def fabonacci_list(n-2):
     fib_list = [0, 1]
     for _ in range(n-2):
         fib_list.append(fib_list[-1] + fib_list[-2])
-    return fib_list[:n] 
-
-print(fabonacci_list(7))
+    return fib_list[:n]    
