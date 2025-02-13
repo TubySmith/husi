@@ -31,3 +31,6 @@ for i in range(7):
     for i in range(9):
         print(fabonacci_generator(i), end=' ')
         #valtozo parameteru 
+# függvény
+def valami():
+    pass
